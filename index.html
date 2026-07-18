@@ -634,7 +634,7 @@ function renderResult(key, mainT, subT, cardName){
 
   /* シェア */
   const resultName = mainT ? TYPES[mainT].name : SPECIALS[key].name;
-  const text = '私は【' + resultName + '】でした。\n職場のその気持ち、恋？診断\n';
+  const text = '職場のその気持ち、恋？診断で「' + resultName + '」でした。出たカードは【' + cardName + '】。\n#恋ゴコロ診断\n';
   const slug = CARD_SLUGS[cardName];
   const shareUrl = slug ? (SITE_BASE + 'share-' + slug + '.html') : (SITE_BASE);
   document.getElementById('shareBtn').href =
